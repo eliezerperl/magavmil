@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #38661cbe;
+
+  /* background-image: url(''); */
+  /* background-size: cover; */
+   /* Gradient background with two shades of dark green */
+   background: linear-gradient(to bottom, #025928, #013220);
+   /* background-repeat: no-repeat; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
