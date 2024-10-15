@@ -1,9 +1,10 @@
-import LandingPage from './landingPage/LandingPage';
+import HomePage from './homePage/HomePage';
+// import LandingPage from './landingPage/LandingPage';
 
 function App() {
   return (
     <>
-      <LandingPage></LandingPage>
+      <HomePage></HomePage>
     </>
   );
 }
