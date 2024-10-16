@@ -1,11 +1,15 @@
 import { Footprints } from 'lucide-react';
 import ButtonGrid from './ButtonGrid';
+import { Button } from '@/components/ui/button';
 
 const HomePage = () => {
   return (
     <>
       <div className="flex flex-col justify-between h-screen w-screen relative">
-        <section className="border flex justify-center">
+        <section className="relative flex justify-center">
+          <Button className="absolute right-5 top-8 bg-magav-dark-green text-white hover:bg-slate-600">
+            <a href={import.meta.env.VITE_MAGAVAPP}>התחברות</a>
+          </Button>
           <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24" />
         </section>
 
