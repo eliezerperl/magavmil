@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .button-small {
-  @apply w-24 h-20 bg-white text-center font-bold rounded-xl whitespace-normal;
+  @apply w-24 h-28 bg-white text-center flex flex-col font-bold rounded-xl whitespace-normal;
 }
 
 /* .top-backround {
@@ -30,8 +30,8 @@ body {
   color: #38661cbe;
 background: linear-gradient(
   -10deg,
-  #025928 10%,    /* First color transition (top third) */
-  #025928 10%,    /* Solid color until 33.33% */
+  #025928 5%,    /* First color transition (top third) */
+  #025928 5%,    /* Solid color until 33.33% */
   #94a3b8 66.66%,     /* Second color transition (middle third) */
   #94a3b8 66.66%,     /* Solid color until 66.66% */
   #025928 83.33%,     /* New color transition (bottom sixth) */
