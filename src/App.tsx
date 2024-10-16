@@ -4,6 +4,8 @@ import HomePage from './homePage/HomePage';
 function App() {
   return (
     <>
+    <section className='top-backround'></section>
+    <section className='bottom-backround'></section>
       <HomePage></HomePage>
     </>
   );

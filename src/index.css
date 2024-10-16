@@ -3,21 +3,45 @@
 @tailwind utilities;
 
 .button-small {
-  @apply w-24 h-20 bg-slate-400 text-center rounded-xl whitespace-normal;
+  @apply w-24 h-20 bg-white text-center font-bold rounded-xl whitespace-normal;
 }
 
-:root {
+/* .top-backround {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  background-color: #025928;
+}
+
+.bottom-backround {
+  position: absolute;
+  height: 100vh;
+  background-color: #94a3b8;
+} */
+
+body {
+  position: relative;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: #38661cbe;
-
+background: linear-gradient(
+  -10deg,
+  #025928 10%,    /* First color transition (top third) */
+  #025928 10%,    /* Solid color until 33.33% */
+  #94a3b8 66.66%,     /* Second color transition (middle third) */
+  #94a3b8 66.66%,     /* Solid color until 66.66% */
+  #025928 83.33%,     /* New color transition (bottom sixth) */
+  #025928 83.33%,     /* Solid color until 83.33% */
+  #025928 100%       /* Color for the bottom sixth */
+);
   /* background-image: url(''); */
   /* background-size: cover; */
   /* Gradient background with two shades of dark green */
-  background: linear-gradient(to bottom, #025928, #013220);
+  /* background: linear-gradient(-10deg, #94a3b8 50%, #025928 50%); */
   /* background-repeat: no-repeat; */
 
   font-synthesis: none;
