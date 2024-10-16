@@ -7,8 +7,6 @@ const HomePage = () => {
       <div className="flex flex-col justify-between h-screen w-screen relative">
         <section className="border flex justify-center">
           <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24" />
-
-          {/* <img src="/police.png" alt="Police Emblem" className="w-32 h-24" /> */}
         </section>
 
         <section className="relative flex flex-col justify-center font-bold">
@@ -18,14 +16,12 @@ const HomePage = () => {
             size={124}
           />
           <h1 className="text-3xl text-center mb-16 z-10 text-white">
-            פורטל מילואים
+            פורטל הדיווחים
             <br /> של ענף המילואים
           </h1>
 
           <ButtonGrid />
         </section>
-
-        {/* <section className="border text-black text-center text-xl"></section> */}
 
         <section className="flex justify-between text-white p-8">
           <aside className="font-serif">

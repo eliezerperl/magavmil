@@ -3,22 +3,25 @@
 @tailwind utilities;
 
 .button-small {
-  @apply w-24 h-28 bg-white text-center flex flex-col font-bold rounded-xl whitespace-normal;
+  @apply w-20 h-28 bg-white text-center flex flex-col font-bold rounded-xl whitespace-normal;
 }
 
-/* .top-backround {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50vh;
-  background-color: #025928;
+.button-small:hover:not(.disabled) {
+  @apply bg-magav-dark-green text-white;
 }
 
-.bottom-backround {
-  position: absolute;
-  height: 100vh;
-  background-color: #94a3b8;
-} */
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-col {
+  @apply flex flex-col gap-2;
+}
+
+u {
+  @apply text-center;
+}
 
 body {
   position: relative;
@@ -28,21 +31,16 @@ body {
 
   color-scheme: light dark;
   color: #38661cbe;
-background: linear-gradient(
-  -10deg,
-  #025928 5%,    /* First color transition (top third) */
-  #025928 5%,    /* Solid color until 33.33% */
-  #94a3b8 66.66%,     /* Second color transition (middle third) */
-  #94a3b8 66.66%,     /* Solid color until 66.66% */
-  #025928 83.33%,     /* New color transition (bottom sixth) */
-  #025928 83.33%,     /* Solid color until 83.33% */
-  #025928 100%       /* Color for the bottom sixth */
-);
-  /* background-image: url(''); */
-  /* background-size: cover; */
-  /* Gradient background with two shades of dark green */
-  /* background: linear-gradient(-10deg, #94a3b8 50%, #025928 50%); */
-  /* background-repeat: no-repeat; */
+  background: linear-gradient(
+    -10deg,
+    #025928 5%,
+    #025928 5%,
+    #94a3b8 66.66%,
+    #94a3b8 66.66%,
+    #025928 83.33%,
+    #025928 83.33%,
+    #025928 100%
+  );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
