@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <>
       <div className=" h-screen w-screen relative">
-        <div className="bg-height-cover">
           <section className="relative flex justify-center">
             <Button className="absolute right-6 top-4 w-20 h-16 p-4 bg-magav-dark-green text-white hover:bg-slate-600">
               <a href={import.meta.env.VITE_MAGAVAPP}>
@@ -15,7 +14,8 @@ const HomePage = () => {
             </Button>
             <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24 " />
           </section>
-          <section className="relative flex flex-col gap-12 mb-36 justify-center font-bold">
+
+          <section className="relative flex flex-col gap-12 mb-32 justify-center font-bold">
             <Footprints
               className="absolute top-0 left-24 rotate-45 opacity-25"
               color="black"
@@ -27,7 +27,8 @@ const HomePage = () => {
             </h1>
             <ButtonGrid />
           </section>
-          <section className="flex justify-between text-white px-6">
+
+          <section className="flex justify-between text-black px-6">
             <aside className="font-serif">
               <span>
                 ״וּרְדַפְתֶּ֖ם אֶת־אֹיְבֵיכֶ֑ם וְנָפְל֥וּ לִפְנֵיכֶ֖ם לֶחָֽרֶב.״
@@ -40,7 +41,6 @@ const HomePage = () => {
               <br /> משמר הגבול
             </aside> */}
           </section>
-        </div>
       </div>
     </>
   );
