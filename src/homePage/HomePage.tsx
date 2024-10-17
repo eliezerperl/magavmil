@@ -28,7 +28,7 @@ const HomePage = () => {
             <ButtonGrid />
           </section>
 
-          <section className="flex justify-between text-whit px-6">
+          <section className="flex justify-between text-white px-6">
             <aside className="font-serif">
               <span>
                 ״וּרְדַפְתֶּ֖ם אֶת־אֹיְבֵיכֶ֑ם וְנָפְל֥וּ לִפְנֵיכֶ֖ם לֶחָֽרֶב.״
