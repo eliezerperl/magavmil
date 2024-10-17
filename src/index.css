@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .bg-height-cover {
-  @apply bg-transparent flex flex-col justify-between w-full;
-  height: 80%
+  @apply bg-transparent flex flex-col justify-between w-full h-5/6;
 }
 
 .button-small {
