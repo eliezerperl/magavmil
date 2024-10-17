@@ -4,7 +4,7 @@
 
 .bg-height-cover {
   @apply bg-transparent flex flex-col justify-between w-full;
-  height: 88%
+  height: 85%
 }
 
 .button-small {
