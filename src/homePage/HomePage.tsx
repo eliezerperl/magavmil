@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <div className=" h-screen w-screen relative">
-        <div className="flex flex-col justify-between w-full h-5/6 bg-transparent">
+        <div className="bg-height-cover">
           <section className="relative flex justify-center">
             <Button className="absolute right-6 top-4 w-20 h-16 p-4 bg-magav-dark-green text-white hover:bg-slate-600">
               <a href={import.meta.env.VITE_MAGAVAPP}>
@@ -15,13 +15,13 @@ const HomePage = () => {
             </Button>
             <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24 " />
           </section>
-          <section className="relative flex flex-col justify-center font-bold mb-20">
+          <section className="relative flex flex-col gap-12 mb-36 justify-center font-bold">
             <Footprints
               className="absolute top-0 left-24 rotate-45 opacity-25"
               color="black"
               size={124}
             />
-            <h1 className="text-3xl text-center mb-12 z-10 text-white">
+            <h1 className="text-3xl text-center z-10 text-white">
               פורטל הדיווחים
               <br /> של ענף המילואים <br /> משמר הגבול
             </h1>
