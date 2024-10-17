@@ -37,7 +37,7 @@ const ButtonGrid = () => {
       <section className="third-line btn-col">
         <u>אמ"ש</u>
         <Button asChild className="button-small disabled">
-          <a href="">דיווח על כח אדם</a>
+          <a href="">דיווח על כח אדם (בקרוב)</a>
         </Button>
       </section>
 
@@ -45,11 +45,11 @@ const ButtonGrid = () => {
       <section className="fourth-line btn-col">
         <u>את"ל</u>
         <Button asChild className="button-small disabled">
-          <a href="">דיווח על מדים</a>
+          <a href="">דיווח על מדים (בקרוב)</a>
         </Button>
 
         <Button asChild className="button-small disabled">
-          <a href="">דיווח על ציוד פלוגתי ואישי</a>
+          <a href="">דיווח על ציוד פלוגתי ואישי (בקרוב)</a>
         </Button>
       </section>
     </div>
