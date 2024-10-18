@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button';
 const HomePage = () => {
   return (
     <>
-      <div className=" h-screen w-screen relative">
-        <section className="relative flex justify-center">
-          <Button className="absolute right-6 top-4 w-20 h-16 p-4 bg-magav-dark-green text-white hover:bg-slate-600">
+      <div className="flex flex-col justify-between h-screen w-screen relative">
+        <section className="relative flex justify-between">
+          <Button className="w-20 h-16 m-4 bg-magav-dark-green text-white hover:bg-slate-600">
             <a href={import.meta.env.VITE_MAGAVAPP}>
               התחברות <br /> למערכת
             </a>
@@ -15,7 +15,7 @@ const HomePage = () => {
           <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24 " />
         </section>
 
-        <section className="relative flex flex-col gap-8 mb-14 justify-center font-bold">
+        <section className="relative flex flex-col gap-8 mb-60 justify-center font-bold">
           <Footprints
             className="absolute top-0 left-24 rotate-45 opacity-25"
             color="black"
@@ -28,13 +28,13 @@ const HomePage = () => {
           <ButtonGrid />
         </section>
 
-        <section className="flex justify-between text-white px-6">
+        <section className="flex justify-center text-white mb-8">
           <aside className="font-serif">
             <span>
               ״וּרְדַפְתֶּ֖ם אֶת־אֹיְבֵיכֶ֑ם וְנָפְל֥וּ לִפְנֵיכֶ֖ם לֶחָֽרֶב.״
+              {'    '}
+              ויקרא כ״ו
             </span>
-            <hr />
-            <div className="text-end">ויקרא כ״ו</div>
           </aside>
           {/* <aside className="text-center font-semibold">
               מילואים
