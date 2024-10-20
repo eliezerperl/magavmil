@@ -15,7 +15,7 @@ const HomePage = () => {
           <img src="/magav.png" alt="Magav Emblem" className="w-24 h-24 mx-6" />
         </section>
 
-        <section className="relative flex flex-col gap-24 justify-center font-bold">
+        <section className="relative flex flex-col gap-20 justify-center font-bold">
           <Footprints
             className="absolute top-0 left-24 rotate-45 opacity-25"
             color="black"
