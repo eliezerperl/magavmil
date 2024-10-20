@@ -20,8 +20,8 @@
   @apply flex flex-col gap-2;
 }
 
-u {
-  @apply text-center;
+.col-title {
+  @apply flex flex-col items-center text-xl;
 }
 
 body {

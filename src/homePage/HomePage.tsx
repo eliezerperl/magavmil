@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col justify-between h-screen w-screen relative">
+      <div className="flex flex-col gap-9 h-screen w-screen relative">
         <section className="relative flex justify-between">
           <Button className="w-20 h-16 m-4 bg-magav-dark-green text-white hover:bg-slate-600">
             <a href={import.meta.env.VITE_MAGAVAPP}>
@@ -21,18 +21,20 @@ const HomePage = () => {
             color="black"
             size={124}
           />
-          <aside className='flex flex-col gap-16'>
+
+          <aside className="flex flex-col gap-16">
             <h1 className="text-3xl text-center z-10 text-white">
               פורטל הדיווחים
               <br /> של ענף המילואים <br /> משמר הגבול
             </h1>
             <ButtonGrid />
           </aside>
+
           <aside className="text-center text-white font-serif">
             <span>
               ״וּרְדַפְתֶּ֖ם אֶת־אֹיְבֵיכֶ֑ם וְנָפְל֥וּ לִפְנֵיכֶ֖ם לֶחָֽרֶב.״
               {'    '}
-              ויקרא כ״ו
+              <span className="text-xs">(ויקרא כ״ו)</span>
             </span>
           </aside>
         </section>

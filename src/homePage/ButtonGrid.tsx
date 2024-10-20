@@ -1,12 +1,23 @@
 import { Button } from '@/components/ui/button';
-import { ClipboardList, ClipboardPenLine, Info } from 'lucide-react';
+import {
+  BriefcaseMedical,
+  ClipboardList,
+  ClipboardPenLine,
+  Info,
+  ShoppingCart,
+  Sword,
+  Users,
+} from 'lucide-react';
 
 const ButtonGrid = () => {
   return (
     <div className="grid grid-cols-4 justify-items-center text-black">
       {/* אג"מ */}
       <section className="first-line btn-col">
-        <u>אג"מ</u>
+        <div className="col-title">
+          <u>אג"מ</u>
+          <Sword />
+        </div>
         <Button asChild className="button-small">
           <a href={import.meta.env.VITE_NOTIFY}>
             דיווח על אירוע מבצעי
@@ -17,7 +28,10 @@ const ButtonGrid = () => {
 
       {/* רפואה */}
       <section className="second-line btn-col">
-        <u>רפואה</u>
+        <div className="col-title">
+          <u>רפואה</u>
+          <BriefcaseMedical />
+        </div>
         <Button asChild className="button-small">
           <a href={import.meta.env.VITE_INJURY}>
             דיווח על פציעה
@@ -35,7 +49,10 @@ const ButtonGrid = () => {
 
       {/* אמ"ש */}
       <section className="third-line btn-col">
-        <u>אמ"ש</u>
+        <div className="col-title">
+          <u>אמ"ש</u>
+          <Users />
+        </div>
         <Button asChild className="button-small disabled">
           <a href="">דיווח על כח אדם (בקרוב)</a>
         </Button>
@@ -43,7 +60,10 @@ const ButtonGrid = () => {
 
       {/* את"ל */}
       <section className="fourth-line btn-col">
-        <u>את"ל</u>
+        <div className="col-title">
+          <u>את"ל</u>
+          <ShoppingCart />
+        </div>
         <Button asChild className="button-small disabled">
           <a href="">דיווח על מדים (בקרוב)</a>
         </Button>
