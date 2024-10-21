@@ -1,11 +1,10 @@
 import HomePage from './homePage/HomePage';
-// import LandingPage from './landingPage/LandingPage';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     <>
-    <section className='top-backround'></section>
-    <section className='bottom-backround'></section>
+      <Analytics />
       <HomePage></HomePage>
     </>
   );
