@@ -53,8 +53,9 @@ const ButtonGrid = () => {
           <u>אמ"ש</u>
           <Users />
         </div>
-        <Button asChild className="button-small disabled">
-          <a href="">דיווח על כח אדם (בקרוב)</a>
+        <Button  className="button-small disabled">
+          דיווח על כח אדם (בקרוב)
+          {/* <a href="">דיווח על כח אדם (בקרוב)</a> */}
         </Button>
       </section>
 
@@ -64,12 +65,14 @@ const ButtonGrid = () => {
           <u>את"ל</u>
           <ShoppingCart />
         </div>
-        <Button asChild className="button-small disabled">
-          <a href="">דיווח על מדים (בקרוב)</a>
+        <Button  className="button-small disabled">
+          דיווח על מדים (בקרוב)
+          {/* <a href="">דיווח על מדים (בקרוב)</a> */}
         </Button>
 
-        <Button asChild className="button-small disabled">
-          <a href="">דיווח על ציוד פלוגתי ואישי (בקרוב)</a>
+        <Button  className="button-small disabled">
+          דיווח על ציוד פלוגתי ואישי (בקרוב)
+          {/* <a href="">דיווח על ציוד פלוגתי ואישי (בקרוב)</a> */}
         </Button>
       </section>
     </div>
