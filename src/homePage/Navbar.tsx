@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import GifToStaticImage from './GifToStaticImage';
 
 const Navbar = () => {
   return (
@@ -10,7 +9,7 @@ const Navbar = () => {
         </a>
       </Button>
       {/* <img className='border w-24 h-24 mx-6' src='/magav-fade.gif'></img> */}
-      <GifToStaticImage />
+      {/* <GifToStaticImage /> */}
       {/* <img
         src="/magavgif.gif"
         alt="Magav Emblem"
@@ -21,11 +20,11 @@ const Navbar = () => {
         alt="Magav Emblem"
         className="w-24 h-24 mx-6 img-animation"
       /> */}
-      {/* <img
+      <img
           src="/magav.png"
           alt="Magav Emblem"
-          className="w-24 h-24 mx-6 img-animation3"
-        /> */}
+          className="w-24 h-24 mx-6 img-animation"
+        />
     </section>
   );
 };
