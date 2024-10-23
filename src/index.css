@@ -7,7 +7,7 @@
 
 /* Both */
 .app-content {
-  @apply flex flex-col  h-screen w-screen relative;
+  @apply flex flex-col h-screen w-screen relative;
 }
 
 .footer {
@@ -18,13 +18,13 @@
   @apply relative flex justify-between;
 }
 
-.portal-title-box {
+/* .portal-title-box {
   @apply flex justify-center;
   z-index: 10;
-}
+} */
 
 .portal-content {
-  @apply flex flex-col;
+  @apply flex flex-col items-center z-10;
 }
 
 .portal-title {
@@ -33,6 +33,10 @@
 
 .portal-box {
   @apply relative flex flex-col justify-center font-bold;
+}
+
+.btngrid {
+  @apply gap-10;
 }
 
 .btn-col {
@@ -126,7 +130,7 @@ body {
 }
 
 .img-animation {
-  animation: combinedEffect 5s ease forwards; 
+  animation: combinedEffect 5s ease forwards;
 }
 /* .img-animation2 {
   animation: combinedEffect 5s ease forwards;
