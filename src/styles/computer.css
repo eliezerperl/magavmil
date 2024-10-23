@@ -1,0 +1,41 @@
+/* Computer Screen  */
+@media screen and (min-width: 501px) {
+  .footer {
+    @apply p-1 bg-magav-dark-green bg-opacity-30 rounded-xl;
+  }
+
+  .footer-box {
+    @apply flex justify-center;
+  }
+
+  .navbar {
+    @apply bg-magav-dark-green bg-opacity-55 rounded-xl;
+  }
+
+  .portal-box {
+    @apply gap-14;
+  }
+
+  .portal-content {
+    @apply gap-4;
+  }
+
+  .portal-title {
+    @apply bg-magav-dark-green bg-opacity-55 p-5 rounded-xl;
+  }
+
+  .app-box {
+  }
+
+  .app-content {
+    @apply gap-5
+  }
+
+  .btngrid-box {
+    @apply flex justify-center;
+  }
+
+  .btngrid {
+    @apply inline-flex justify-center gap-11 bg-magav-dark-green bg-opacity-55 text-white p-5 rounded-xl;
+  }
+}

@@ -1,10 +1,50 @@
+@import url('styles/computer.css');
+@import url('styles/mobile.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Both */
+.app-content {
+  @apply flex flex-col  h-screen w-screen relative;
+}
+
+.footer {
+  @apply flex justify-center items-center text-center text-white font-serif;
+}
+
+.navbar {
+  @apply relative flex justify-between;
+}
+
+.portal-title-box {
+  @apply flex justify-center;
+  z-index: 10;
+}
+
+.portal-content {
+  @apply flex flex-col;
+}
+
+.portal-title {
+  @apply text-3xl text-center z-10 text-white;
+}
+
+.portal-box {
+  @apply relative flex flex-col justify-center font-bold;
+}
+
+.btn-col {
+  @apply flex flex-col gap-2;
+}
+
+.col-title {
+  @apply flex flex-col items-center text-xl;
+}
 
 .button-small {
-  @apply w-20 h-28 bg-white text-center flex flex-col font-bold rounded-xl whitespace-normal;
+  @apply w-20 h-28 bg-white text-black text-center flex flex-col font-bold rounded-xl whitespace-normal;
 }
 
 .button-small:hover:not(.disabled) {
@@ -14,14 +54,6 @@
 .disabled {
   cursor: not-allowed;
   opacity: 0.5;
-}
-
-.btn-col {
-  @apply flex flex-col gap-2;
-}
-
-.col-title {
-  @apply flex flex-col items-center text-xl;
 }
 
 body {
@@ -48,3 +80,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  @apply flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scale(0.9); /* Optional: scale effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes combinedEffect {
+  0% {
+    transform: translateY(20px) scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes dustAway {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8) rotate(10deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-20px) scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.img-animation {
+  animation: combinedEffect 5s ease forwards; 
+}
+/* .img-animation2 {
+  animation: combinedEffect 5s ease forwards;
+}
+.img-animation3 {
+  animation: fadeIn 5s ease forwards;
+} */

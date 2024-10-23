@@ -1,0 +1,23 @@
+/* Mobile Screen */
+@media screen and (max-width: 500px) {
+
+  .app-content {
+    @apply gap-9;
+  }
+
+  .btngrid {
+    @apply grid grid-cols-4 justify-items-center;
+  }
+
+  .col-title {
+    @apply text-black;
+  }
+
+  .portal-box {
+    @apply gap-24;
+  }
+
+  .portal-content {
+    @apply gap-12
+  }
+}
